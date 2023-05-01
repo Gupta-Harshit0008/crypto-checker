@@ -1,0 +1,10 @@
+<mat-toolbar>
+   <span>Crypto Currency Checker</span>
+   <span class="example-spacer"></span> 
+    <mat-form-field >
+      <mat-select (valueChange)="sendcurrency($event)" [(ngModel)]="selectedCurrency">
+        <mat-option Selected value="INR">INR</mat-option>
+        <mat-option disabled value="USD">USD(currently INR Data only)</mat-option>
+      </mat-select>
+    </mat-form-field>
+</mat-toolbar>
